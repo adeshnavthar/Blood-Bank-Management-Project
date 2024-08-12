@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            font-size: large;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+
+        }
+        nav a:hover {
+            background-color: #b3032c;
+            color: white;
+                    
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header><br><br>
+    <nav>
+        <ul>
+            <a href="/all_users">All Users</a><br>
+            <a href="/donor_list">Donor List</a><br>
+            <a href="/patient_list">Patient List</a><br>
+            <a href="/blood_stock">Blood Stock</a><br>
+            <a href="logout">Logout</a><br>
+
+        </ul>
+    </nav>
+    
+</body>
+</html>

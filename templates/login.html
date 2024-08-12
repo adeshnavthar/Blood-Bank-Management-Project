@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url('../static/img/bg2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #343a40;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 8px;
+            text-align: left;
+            color:rgb(167, 2, 38);
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+label {
+    width: 100%; 
+    max-width: 300px; 
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgb(167, 2, 38);
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    max-width: 300px; 
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .links a:hover {
+            color: #0056b3;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #dc1313;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .container-1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/donate_blood">Donate Blood</a>
+            <a href="/sale_blood">Request Blood</a>
+            <a href="admin_login">Admin Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Login</h1>
+        <p style="text-align: center; font-weight: bolder; color: #dc1313;">{{msg}}</p>
+
+        <form action="/login" method="post">
+            <label for="email" >Email:
+            <input type="email" id="email" name="email" required></label>
+
+            <label for="password">Password:
+            <input type="password" id="password" name="password" required></label>
+
+            <input type="submit" value="Login"> <br>
+
+            <div class="container-1">
+                <a href="/register">Don't have an Account ? Register Now</a>
+            </div>
+        </form>
+        <div class="links">
+
+        </div>
+    </div>
+</body>
+</html>

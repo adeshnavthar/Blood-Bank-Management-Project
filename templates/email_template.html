@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation and Purchase History</title>
+    <style>
+        table {
+            vertical-align: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+         td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 8px;
+            color: rgb(2, 139, 252);
+        }
+        th {
+            border: 1px solid #000000;
+            background-color: #b7efef;
+            text-align: center;
+            padding: 8px;
+            color: rgb(12, 12, 12);
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blood Donation History</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Blood Group</th>
+                <th>Donor Name</th>
+                <th>Gender</th>
+                <th>Quantity</th>
+                <th>Weight</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Donation Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for donor in donors %}
+            <tr>
+                <td>{{ donor[1]}}</td>
+                <td>{{ donor[2]}}</td>
+                <td>{{ donor[3]}}</td>
+                <td>{{ donor[4] }}</td>
+                <td>{{ donor[5] }}</td>
+                <td>{{ donor[7] }}</td>
+                <td>{{ donor[8]}}</td>
+                <td>{{ donor[9] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Blood Purchase History</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Blood Group</th>
+                <th>Patient Name</th>
+                <th>Gender</th>
+                <th>Quantity</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Purchase Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for patient in patients %}
+            <tr>
+                <td>{{ patient[1] }}</td>
+                <td>{{ patient[2] }}</td>
+                <td>{{ patient[3] }}</td>
+                <td>{{ patient[5] }}</td>
+                <td>{{ patient[6] }}</td>
+                <td>{{ patient[7] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
