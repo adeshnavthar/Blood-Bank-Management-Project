@@ -1,1 +1,290 @@
+.about .row {
+    display: flex;
+    align-items: center;
+}
 
+.icon-box .description {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+}
+
+
+.about .video-box {
+    order: 1;
+    /* Moves the image to the left */
+    margin-right: 30px;
+    /* Adjust margin as needed */
+}
+
+.about .icon-boxes {
+    order: 2;
+    /* Moves the text to the right */
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 18px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+}
+
+.about h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.icon-box {
+    margin-bottom: 30px;
+}
+
+.icon-box .icon {
+    margin-bottom: 15px;
+}
+
+.icon-box h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* services */
+/* Style for card titles */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style for card text */
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Style for card images */
+.card img {
+    margin-right: 10px;
+    /* Add some space between image and text */
+}
+
+/* Style for section title */
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style for section subtitle */
+.section-title p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Doctors Section */
+.doctors .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.doctors .col-lg-6 {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    margin: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .doctors .col-lg-6 {
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
+    }
+}
+
+.doctors .pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Optional: add border-radius for rounded corners */
+    max-width: 250px;
+    /* Adjust the maximum width of the image */
+}
+
+/* Optional: Additional styling for member-info or social links */
+.doctors .member-info {
+    padding-left: 15px;
+    /* Adjust padding as needed */
+}
+
+.doctors .social a {
+    margin-right: 10px;
+    /* Adjust margin between social icons */
+}
+
+/*gallery section */
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    margin: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .gallery-item {
+        flex: 0 0 calc(33.33% - 30px);
+        max-width: calc(33.33% - 30px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .gallery-item {
+        flex: 0 0 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-item {
+        flex: 0 0 calc(100% - 30px);
+        max-width: calc(100% - 30px);
+    }
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Optional: add border-radius for rounded corners */
+}
+
+/* ======= Footer ======= */
+
+#footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.footer-top {
+    background-color: #343a40;
+    padding: 60px 0 30px 0;
+    color: #fff;
+}
+
+.footer-contact h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    padding: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ddb700;
+}
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #b30a91;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #333;
+    color: #ddb700;
+}
+
+/* Add this CSS to center the copyright text and social links */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .copyright,
+.footer-container .social-links {
+    margin-bottom: 0;
+}
+
+.footer-container .social-links {
+    margin-left: 20px;
+    /* Adjust the spacing between the copyright text and social links */
+}
